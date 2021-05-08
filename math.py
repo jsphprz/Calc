@@ -35,6 +35,9 @@ def cen2mm(n: float): #centimeter to millimeter conversion
 def cen2inc(n: float): #centimeter to inch
     return n / 2.54
 
+def kilo2mile(n: float): #kilometer to mile
+    return n / 1.609
+
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game('calculator | `help')) #Discord status
@@ -66,6 +69,7 @@ async def conv(ctx):
     em.add_field(name = "Inch to Centimeter", value = "``in2cm`", inline=False)
     em.add_field(name = "Centimeter to Inch", value = "``cm2in`", inline=False)
     em.add_field(name = "Centimeter to Millimetre", value = "``cm2mm`", inline=False)
+    em.add_field(name = "Kilometer to Mile", value = "``km2m`", inline=False)
     await ctx.send(embed=em)
 
 #Commands
@@ -121,5 +125,13 @@ async def cm2in(ctx, x: float):
     res = cen2inc(x)
     deci = "{:.3f}".format(res)
     await ctx.send("Result is: "  + str(deci) + " in")
+
+#kilometer to mile
+@client.command()
+async def km2m(ctx, x: float):
+    res = kilo2mile(x)
+    deci = "{:.3f}".format(res)
+    await ctx.send("Result is: " + str(deci) + " mile")
+
 
 client.run(os.getenv("TOKEN"))
