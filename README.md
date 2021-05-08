@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-
-<img src="https://github.com/jsphprz/calc/blob/main/calc.png" width="250">
+<p align = "center">
+<img src="https://github.com/jsphprz/calc/blob/main/calc.png" width="290">
+ </p>
 <h1 style="color:DodgerBlue;">Calc 🔢 </h1>
 <h3> A Simple Calculator Discord Bot</h3> 
 
