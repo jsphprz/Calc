@@ -35,8 +35,6 @@ def cen2mm(n: float): #centimeter to millimeter conversion
 def cen2inc(n: float): #centimeter to inch
     return n / 2.54
 
-
-
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game('calculator | `help')) #Discord status
