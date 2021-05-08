@@ -7,13 +7,24 @@
 Bot command is: <b>`</b>
 <h3> Features: </h3>
 <ol>
-  <li> Basic Math Operations </li>
-  <ul>Addition ➕</ul>
-  <ul>Tea</ul>
-  <ul>Milk</ul>
-</ol>  
-1. Addition ➕ <br>
-2. Subtraction ➖ <br>
-3. Multiplication ✖ <br>
-4. Division ➗ <br>
-5. Find the sqaure root of a number 
+  <li>
+    <b>Basic Math Operations</b> 
+    <ul>
+      <li>Addition ➕</li>
+      <li>Subtraction ➖</li>
+      <li>Multiplication ✖</li>
+      <li>Division ➗</li>
+      <li>Find the sqaure root of a number</li>
+    </ul>
+  </li>
+   <li>
+     <b>Unit Conversions</b> 
+    <ul>
+      <li>Inch to Centimeter </li>
+      <li>Centimeter to Millimetre</li>
+      <li>Centimeter to Inch</li>
+    </ul>
+  </li>
+</ol>
+
+
