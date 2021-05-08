@@ -1,6 +1,11 @@
-import math
-from discord.ext import commands
+from asyncio import sleep
+import os
 import discord
+from discord.ext import commands
+import math
+from dotenv import load_dotenv
+
+load_dotenv()
 
 client = commands.AutoShardedBot(commands.when_mentioned_or('`'))
 client.remove_command("help")
@@ -69,4 +74,4 @@ async def sqrtof(ctx, x: float):
     deci = "{:.2f}".format(res)
     await ctx.send("Result is: " + str(deci))
 
-client.run('InsertTokenHere')
+client.run(os.getenv("TOKEN"))
