@@ -69,4 +69,4 @@ async def sqrtof(ctx, x: float):
     deci = "{:.2f}".format(res)
     await ctx.send("Result is: " + str(deci))
 
-client.run('ODMzMzQyNjkzMzQxNTI4MDg0.YHw83A.2UpomYw76d_zspiq-L7uLXUMvSY')
+client.run('InsertTokenHere')
