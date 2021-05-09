@@ -5,6 +5,12 @@
 <h1 style="color:DodgerBlue;">Calc 🔢 </h1>
 <h3> A Simple Calculator Discord Bot</h3> 
 
+<h4>Prerequisites</h4>
+<ul>
+ <li>Python</li>
+ <li>discord.py</li>
+</ul>
+
 Bot command is: <b>`</b>
 <h3> Features: </h3>
 <ol>
@@ -23,7 +29,18 @@ Bot command is: <b>`</b>
     <ul>
       <li>Inch to Centimeter </li>
       <li>Centimeter to Millimetre</li>
-      <li>Centimeter to Inch</li>
+     <li>Centimeter to Inch</li>
+     <li>Kilometer to Mile</li>
+     <li>Mile to Kilometer</li>
+     <li>Inch to Foot</li>
+     <li>Foot to Inch</li>
+     <li>Inch to foot</li>
+     <li>Celsius to Fahrenheit</li>
+     <li>Fahrenheit to Celsius</li>
+     <li>Kilograms to Pounds</li>
+     <li>Pounds to Kilograms</li>
+     <li>US Ton to Kilogram</li>
+     <li>Kilogram to US Ton</li>
     </ul>
   </li>
 </ol>
