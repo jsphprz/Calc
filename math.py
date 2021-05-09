@@ -75,8 +75,8 @@ async def help(ctx):
     em = discord.Embed(title = "Help", color = discord.Color.from_rgb(255,0,0))
     em.set_thumbnail(url='https://cdn.discordapp.com/attachments/840261018760380450/840825421604192256/calc.png')
     em.set_footer(text=f'Requested By - {ctx.author}', icon_url=ctx.author.avatar_url)
-    em.add_field(name = "Basic Math Operations", value = "`help basicmath")
-    em.add_field(name = "Conversion", value = "`help conv")
+    em.add_field(name = "Basic Math Operations", value = "``help basicmath`")
+    em.add_field(name = "Conversion", value = "``help conv`")
     em.add_field(name = "Check Bot Latency", value = "``ping`", inline=False)
     await ctx.send(embed=em)
 
