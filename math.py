@@ -1,4 +1,4 @@
-from asyncio import sleep
+import asyncio
 import os
 import discord
 from discord.ext import commands
@@ -70,7 +70,6 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game('calculator | `help')) 
     print('Ready!')
 
-
 @client.group(invoke_without_command=True)
 async def help(ctx):
     em = discord.Embed(title = "Help", color = discord.Color.from_rgb(255,0,0))
@@ -78,6 +77,7 @@ async def help(ctx):
     em.set_footer(text=f'Requested By - {ctx.author}', icon_url=ctx.author.avatar_url)
     em.add_field(name = "Basic Math Operations", value = "`help basicmath")
     em.add_field(name = "Conversion", value = "`help conv")
+    em.add_field(name = "Check Bot Latency", value = "``ping`", inline=False)
     await ctx.send(embed=em)
 
 @help.command()
@@ -155,6 +155,10 @@ async def conv(ctx):
                 await msg.edit(embed=client.help_pages[current])
 
 #Commands
+
+@client.command(name='ping')
+async def ping(ctx):
+    await ctx.send(f'Latancy: {round(client.latency * 1000)}ms')
 
 @client.command()
 async def pls(ctx):
