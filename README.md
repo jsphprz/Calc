@@ -36,3 +36,7 @@ Bot command is: <strong>`</strong>
     </ul>
   </li>
 </ol>
+
+<h5>
+Try <a href="https://discord.com/api/oauth2/authorize?client_id=833342693341528084&permissions=76800&scope=bot">Calc</a> to your server!
+ </h5>
