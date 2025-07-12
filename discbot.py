@@ -10,7 +10,7 @@ load_dotenv()
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = commands.AutoShardedBot(command_prefix=commands.when_mentioned_or('/'), intents=intents)
+client = commands.AutoShardedBot(command_prefix=commands.when_mentioned_or('`'), intents=intents)
 client.remove_command("help")
 
 def add(x, y): return x + y
@@ -35,7 +35,7 @@ def kgtoton(n): return n / 907
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Streaming(name="my peen | /help", url='https://www.twitch.tv/amouranth'))
+    await client.change_presence(activity=discord.Streaming(name="my peen | `help", url='https://www.twitch.tv/amouranth'))
     print(f'Logged in as {client.user} (ID: {client.user.id})')
 
 @client.group(invoke_without_command=True)
