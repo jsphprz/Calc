@@ -4,6 +4,7 @@ import math
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 load_dotenv()
 
@@ -61,7 +62,6 @@ async def basicmath(ctx):
     em.add_field(name="Square Root", value="`sqrtof`", inline=False)
     await ctx.send(embed=em)
 
-# --- Embed Pages ---
 client.help_pages = [
     discord.Embed(
         title="Conversions",
@@ -150,7 +150,6 @@ async def plsdiv(ctx, x: float, y: float): await ctx.send(f"Result is: `{div(x, 
 @client.command()
 async def sqrtof(ctx, x: float): await ctx.send(f"Result is: `{sqrt(x):.2f}`")
 
-# Conversion Commands
 @client.command()
 async def in2cm(ctx, x: float): await ctx.send(f"Result is: `{inch2cm(x):.2f} cm`")
 @client.command()
@@ -178,4 +177,5 @@ async def ton2kg(ctx, x: float): await ctx.send(f"Result is: `{tontokg(x):.3f} k
 @client.command()
 async def kg2ton(ctx, x: float): await ctx.send(f"Result is: `{kgtoton(x):.3f} t`")
 
+keep_alive()
 client.run(os.getenv("TOKEN"))
