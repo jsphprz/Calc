@@ -35,7 +35,7 @@ def kgtoton(n): return n / 907
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Streaming(name="my peen | `help", url='https://www.twitch.tv/amouranth'))
+    await client.change_presence(activity=discord.Streaming(name="my peen | /help", url='https://www.twitch.tv/amouranth'))
     print(f'Logged in as {client.user} (ID: {client.user.id})')
 
 @client.group(invoke_without_command=True)
